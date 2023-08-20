@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --winning-blocks: #2f2f30;
+    --white: #f1f1ff;
+    --red: #ff0000fe;
+    --blue: #00c8ff;
+}
+
+body {
+    color: var(--white);
+    font-family: ROG fonts, cursive;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+h3 {
+    text-transform: uppercase;
+    margin: auto;
+    color: #fffca1;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 100px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--white);
+    text-shadow: 0px 0px 20px #ffffff5a;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    margin:auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #010101;
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+    font-family: ROG fonts, cursive;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: #dcffda;
+    color: #000000;
+}
