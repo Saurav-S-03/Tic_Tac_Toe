@@ -59,7 +59,7 @@ function boxClicked(e) {
     }
     if(count >= 9){
         playerText.innerHTML = `Game is a Draw..!!`
-        // endText.innerHTML = `Click Restart to Continue`
+        endText.innerHTML = `Click Restart to Continue`
         flag = true
         return 
     }
